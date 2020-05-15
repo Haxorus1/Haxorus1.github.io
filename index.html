@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<title> The Cyberverse </title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="outerwrapper"> 
+	<header>
+		<a href="index.html"><img src="Cyberverse Logo.svg" alt="Cyberverse logo"></a>
+		</header>
+		<!-- Changed white text to blue -->
+		<h2><em>Cyberspace is a BIG place even for a web developer. </em></h2>
+	<br>
+	<br>
+	<br>
+	<!-- pink text and turns red when you hover it-->
+		<!-- Changed the blue text to pink-->
+	<div class="navbar-nav center">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a href="projects.html">Projects</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a href="contact.html">Contact</a>
+      </li> -->
+    </ul>
+  </div>
+</nav>
+	<!-- Changed white text to blue -->
+	<div id="main">
+	<!-- Changed white text to blue -->
+	<div id="hobbies">
+		<p> Hello! My name is Austin and I'm currently in the web development class and looking forward to create all sorts of websites for my part in cyberspace and eventually plan on getting certifications in HTML, CSS, Photoshop, and Illustrator.  </p>
+		<p>When I'm not Learning Code I enjoy:</p>
+	<ul>
+		<li>I like to play Yugioh and MTG (I'm always up for a duel)</li>
+		<li>I like to play video games</li>
+		<li>I like to play with my 2 pugs</li>
+		<li>I'm currently working on a Future Game</li>
+	</ul>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<article>
+	<!-- The javascript element is the hide and show button it hides 4 cards and shows them-->
+		<h2>Yu-Gi-Oh Decks</h2>
+		
+		<p>Blue-Eyes White Dragon Deck</p>
+		<img src="cards/blue-eyes.jpg" alt="Blue-eyes Deck" height="150" width="100"><br><br>
+
+		<p>Egyptian God Deck</p>
+		<img src="cards/Egyptain Gods.jpg" alt="Egyptain Gods Deck" height="150" width="300"><br><br>
+
+		<p>Exodia Deck</p>
+		<img src="cards/exodia.jpg" alt="Exodia Deck" height="150" width="100"><br><br>
+
+		<p>Zombie Horde Deck</p>
+		<img src="cards/red-eyes.png" alt="Zombie Deck" height="150" width="100"><br><br>
+
+		<h2>Magic The Gathering Decks</h2>
+
+		<p>The Great Dragon Army</p>
+		<img src="cards/ulamog.jpg" alt="The Great Dragoninal Army" height="150" width="100"><br><br>
+
+		<p>Universal Power</p>
+		<img src="cards/ur.jpg" alt="Universal Power" height="150" width="100"><br><br>
+		</article>
+	</div> 
+<footer>
+	<!-- changed white text to pink-->
+	<!-- Added a box shadow around the footer-->
+		<p>&copy; Copyright school year 2018-2019 | PTC Web Dev | <a href="mailto:Haxorusup@gmail.com"> e-mail Haxorus</a></p>
+</footer>
+</div>
+<div class="slideout">
+  <i class="fa fa-phone fa-lg"></i>
+  <div class="slideoutInner">
+    <h1>Contact Me!</h1>
+    <p>Leave a message or comment here...</p>
+    <form action="mail.php" method="POST">
+    <div class="form-content">
+			<div class="group">
+				<label for="name" class="empty"></label>
+				<div><input id="name" name="name" placeholder="Your Name" class="form-control" required=""></div>
+			</div>
+			<div class="group">
+				<label for="email" class="empty"></label>
+				<div><input type="email" name="email" placeholder="Your Email" class="form-control" required=""></div>
+			</div>
+			</div>
+			<br>
+			<label for="subject"></label>
+			<input type="subject" name="subject" placeholder="Subject" id="subject"><br>
+			<div class="group">
+				<label for="message" class="empty"></label>
+				<div><textarea id="message" name="message" placeholder="Your Message" class="form-control" rows="5" required=""></textarea></div>
+			</div>
+			<div class="group">
+				<label class="empty"></label>
+				<div><button class="btn-submit" type="submit" onclick="document.getElementById('contact-form').submit();">Submit</button></div>
+			</div>
+		</div>
+	</form> 	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("article").hide();
+  });
+  $("#show").click(function(){
+    $("article").show();
+  });
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,443 @@
+/*Austin Shinpaugh 8-29-2018*/
+
+body { 
+		color: #24bddf;
+	  	font-family: "Arial", serif;
+	  	font-size: 14px;
+	  	line-height: 20px;
+	background: url("Lava.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size-: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    	text-align: center;
+	  }
+h2 {
+	color: #24bddf
+}
+p {
+	color: #24bddf
+}
+ul li {
+	color: pink
+}
+/* Style for Mobile Layout*/
+
+/*style for the container centers the page and specifies the width*/
+#container {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	max-width: 100%;
+}
+header img {
+	width: 500px;
+	height: 100px;
+}
+/* Style for header specifies top margins, background color, rounded corners, and center-align contents */
+header {
+	text-align: center;
+}
+.aligncenter {
+	text-align: center;
+}
+/* Style for the nav specifies text properties */
+nav {
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -1.5em;
+}
+
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullets, and applies margins and padding for list items within the navigation */
+nav li {
+	background-color: #9D9D93;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+
+/* Style displays the mobile class*/
+.mobile {
+	display: inline;
+}
+
+/* Style hides the desktop class*/
+.desktop {
+	display: none;
+}
+
+/* Style for the main element specifies a block display, text properties, margins, padding, rounded corners, and border properties */
+main {
+	display: block;
+	font-size: 1em;
+	border-radius: 1em 0 1em 0;
+	text-align: center;
+	background-color:rgba(0, 0, 0, 0.50);
+}
+/* Style for anchor elements within the main element*/
+main a {
+	border-radius: 1em;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 0.5em;
+	text-decoration: none;
+}
+/* Style for footer specifies font size, text alignment, and top margin */
+footer {
+	font-size: .70em;
+	text-align: center;
+	color: pink;
+	background-color:rgba(0, 0, 0, 0.40);
+}
+
+/* Style for anchor elements within the footer*/
+footer a {
+	color: pink;
+	text-decoration: none;
+}
+
+/* Style hides the tablet class */
+.tablet{
+	display: none;
+}
+
+/* Style rule specifies to not display the equip class */
+.equip {
+	display: none;
+}
+
+/*style rule for input, select, and textarea form elements*/
+input, select, textarea {
+	display: block;
+	margin-bottom: 1em;
+}
+
+/* style for label element*/
+label {
+	display: block;
+}
+
+/* style rule for unordered list within a form*/
+form ul {
+	list-style-type: none;
+}
+#outerwrapper { 
+		width: 80%;
+		margin: 0 auto 0 auto;
+				}
+
+footer {
+		font-size: 0.75em;
+		text-align: center;
+		clear: both;
+		}
+
+#main {	
+		/*background-color:rgba(0, 0, 0, 0.50);*/
+		text-align: center;
+		padding: .5%;
+		color: #24bddf;
+	}
+#main-2 {	
+		background-color: #000000;
+		text-align: center;
+		padding: 5%;
+		color: #FF00FF;
+		font-size: 22px;
+	}
+#hobbies {
+		text-align: left;
+		padding: .5%;
+		background-color:rgba(0, 0, 0, 0.50);
+}
+
+.floatleft {	
+		float: left;
+		margin-right: 3%;
+	}
+
+.floatright {
+		float: right;
+		margin-left: 3%;
+		}
+nav a:hover {
+	color: red;
+	font-style: italic;
+}
+/* style specifies border, box shadow, and margins for the main element*/
+nav a:active {
+	color: pink;
+}
+a {
+	color: pink;
+	text-decoration: none;
+}
+input[type=submit], input[type=reset] {
+  background-color: white;
+  border: none;
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+  cursor: pointer;
+}
+body{
+  margin:0;
+}
+
+/* Media query for desktop viewport targets screens with a minimum width of 830px*/
+
+@media only screen and (min-width: 830px) {
+
+/*style specifies width for container*/
+#container {
+	background-color: #1D1D1C;
+}
+/* style to left align header*/
+header {
+	text-align: center;
+}
+/*style for nav specifies a float, margin and width*/
+nav {
+	font-size: 1.25em;
+	font-weight: bold;
+	text-align: center;
+	margin-top: -1.5em;
+}
+
+nav ul {
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+/* Style for nav li specifies the background color, rounded corners, removes bullets, and applies margins and padding for list items within the navigation */
+nav li {
+	background-color: #9D9D93;
+	border-radius: 2em;
+	list-style-type: none;
+	margin: 0.3em;
+	padding: 0.4em;
+}
+
+/* Style changes navigation link text color to white and removes the underline */
+nav li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+/*Style rule for form unordered list element*/
+form ul {
+	margin-left: -1em;
+	text-align: center;
+}
+/*style for navigation links specifies display and padding*/
+nav li a {
+	/*display: inline-block;*/
+	padding: 0.7em;
+	text-shadow: 0.2em 0.1em #3D3D35;
+}
+/*style rules for pseudo-classes*/
+nav a:link {
+	color: pink;
+}
+
+nav a:hover {
+	color: red;
+	font-style: italic;
+}
+a:hover {
+	color: cyan;
+	font-style: italic;
+}
+a {
+	color: pink;
+	text-decoration: none;
+}
+img {
+	max-width: 100%;
+}
+header img {
+	width: 300px;
+	height: 100px;
+
+}
+body{
+  margin:0;
+}
+
+.fa{
+  font-size:30px;
+  color: white;
+  position:absolute;
+  left:10px;
+  top:10px;
+}
+
+.slideout{
+  width:400px;
+  height:50px;
+  background:#191919;
+  position:fixed;
+  top:20px;
+  right:-355px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.slideout:hover{
+  right:0;
+  cursor:pointer;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.slideoutInner{
+  width:88%;
+  position:absolute;
+  right:0;
+  top:0;
+  background:#191919;
+  color:#FFF;
+  text-align:center;
+}
+/* style specifies border, shadow, margin, and padding for main element*/
+/*main {
+	background-color: #1D1D1C;
+}*/
+/* style specifies left and right padding for paragraph elements within the main element*/
+main p {
+	color: 
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%
+	text-align: center;
+
+}
+/* style applies color to h1 element*/
+h1 {
+	color: #FFFFFF;
+	text-align: center;
+}
+h2 {
+	color: #24bddf;
+	text-align: center;
+}
+p {
+	color: #24bddf;
+}
+li {
+	color: pink;
+}
+/* style applies height and opacity to images within figures elemment*/
+figure img {
+	height: 15em;
+	opacity: 0.7%;
+}
+/*style removes transparency on hover*/
+figure img:hover {
+	opacity: 1;
+}
+/* style specifies a gradient for the body element*/
+body {
+	background-color: #FFFFFF;
+}
+/* style specifies a background color, margins, and padding for footer element*/
+footer {
+	margin-top: -0.2em;
+	padding: 2em;
+	overflow: auto;
+}
+/*style specifies color and left margin for the section element*/
+section {
+	color: #FFFFFF;
+	margin-left: 1em;
+	padding-bottom: 5em;
+}
+/* style for anchor element within the section element*/
+section a {
+	color: #FFFFFF;
+}
+/*style for paragraph within the section element*/
+section p {
+	margin-left: 0;
+}
+/* style for main h2 element*/
+main h2 {
+	color: #FFFFFF;
+}
+/*style for contact class*/
+.contact {
+	color: #FFFFFF;
+}
+/*style for main article h2 element*/
+main element h2 {
+	color: #000000;
+}
+/* style for table element*/
+table {
+	background-color: #FFFFFF;
+	width: 85%;
+}
+/* style for caption element*/
+caption {
+	color: #FFFFFF;
+}
+li input {
+	display: inline;
+	padding-left: 6em;
+}
+input {
+	display: inline;
+}
+}
+textarea {
+	display: inline;
+}
+/*style rule for form element*/
+/*form {
+	background: url("Lava.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size-: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #FFFFFF;
+	padding: 1em;
+	text-align: center;
+}*/
+/*style rule for paragraph with form element*/
+form p {
+	color: white;
+}
+form li {
+	text-align: center;
+}
+#outerwrapper { 
+		width: 80%;
+		margin: 0 auto 0 auto;
+				}
+			}
+ul { 
+	list-style-type: none;
+}
